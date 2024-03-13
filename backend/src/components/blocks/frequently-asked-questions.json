@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_content_display_frequently_asked_questions",
+  "info": {
+    "displayName": "FAQs",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "faqs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::faq.faq"
+    },
+    "heading": {
+      "type": "string"
+    }
+  }
+}

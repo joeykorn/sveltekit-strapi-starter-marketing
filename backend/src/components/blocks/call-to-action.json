@@ -1,14 +1,15 @@
 {
-  "collectionName": "components_blocks_heroes",
+  "collectionName": "components_content_display_call_to_actions",
   "info": {
-    "displayName": "hero"
+    "displayName": "CallToAction",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "heading": {
       "type": "string"
     },
-    "text": {
+    "message": {
       "type": "string"
     },
     "linkPrimary": {
