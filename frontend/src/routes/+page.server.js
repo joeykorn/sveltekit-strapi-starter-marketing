@@ -1,5 +1,5 @@
-import { fetchStrapiData } from '$lib/strapi';
+import { getPageBySlug } from '$lib/strapi';
 
 export async function load() {
-	return { home: await fetchStrapiData('home-page', 'populate=*') };
+	const page = await getPageBySlug('home');
 }

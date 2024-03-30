@@ -1,20 +1,55 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
-export interface ContentDisplayHero extends Schema.Component {
-  collectionName: 'components_content_display_heroes';
+export interface BlocksHero extends Schema.Component {
+  collectionName: 'components_blocks_heroes';
   info: {
     displayName: 'hero';
-    description: '';
   };
   attributes: {
     heading: Attribute.String;
   };
 }
 
+export interface LayoutHeader extends Schema.Component {
+  collectionName: 'components_layout_headers';
+  info: {
+    displayName: 'header';
+  };
+  attributes: {
+    headerLogo: Attribute.Component<'layout.logo'>;
+  };
+}
+
+export interface LayoutLogo extends Schema.Component {
+  collectionName: 'components_layout_logos';
+  info: {
+    displayName: 'logo';
+    description: '';
+  };
+  attributes: {
+    logoImage: Attribute.Media;
+    logoText: Attribute.String;
+  };
+}
+
+export interface SharedSeo extends Schema.Component {
+  collectionName: 'components_shared_seos';
+  info: {
+    displayName: 'seo';
+  };
+  attributes: {
+    metaTitle: Attribute.String;
+    metaDescription: Attribute.String;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
-      'content-display.hero': ContentDisplayHero;
+      'blocks.hero': BlocksHero;
+      'layout.header': LayoutHeader;
+      'layout.logo': LayoutLogo;
+      'shared.seo': SharedSeo;
     }
   }
 }
