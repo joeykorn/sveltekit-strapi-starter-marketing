@@ -52,3 +52,11 @@ Start development server
 ```bash
 npm run dev
 ```
+
+### Concurrently
+
+Start development server for both front-end and back-end
+
+```bash
+npm run dev
+```
