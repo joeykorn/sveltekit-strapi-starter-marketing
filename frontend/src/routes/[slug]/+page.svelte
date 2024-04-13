@@ -1,4 +1,4 @@
 <script>
 	export let data;
-	let homePage = data.page[0];
+	let slugPage = data.page[0];
 </script>
