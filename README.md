@@ -53,6 +53,19 @@ Start development server
 npm run dev
 ```
 
+### Create token to access content
+
+In Strapi Admin, navigate to Settings -> API Tokens and click on `Create new API Token`
+
+**Name**: Public API Token Content
+**Description**: Access to public content
+**Token duration**: Unlimited
+**Token type**: Read-only
+
+Provide Permissions access as needed
+
+Add token to `.env` by updating value for `PUBLIC_STRAPI_API_TOKEN`
+
 ### Concurrently
 
 Start development server for both front-end and back-end
