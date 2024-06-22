@@ -1,11 +1,18 @@
 {
   "collectionName": "components_blocks_heroes",
   "info": {
-    "displayName": "hero"
+    "displayName": "Hero",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "heading": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "linkPrimary": {
       "type": "string"
     }
   }

@@ -1,7 +1,8 @@
 {
   "collectionName": "components_layout_headers",
   "info": {
-    "displayName": "header"
+    "displayName": "header",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -9,6 +10,11 @@
       "type": "component",
       "repeatable": false,
       "component": "layout.logo"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.link"
     }
   }
 }

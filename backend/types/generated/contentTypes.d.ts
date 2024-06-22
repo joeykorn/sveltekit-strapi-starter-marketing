@@ -802,6 +802,7 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
   attributes: {
     favicon: Attribute.Media;
     header: Attribute.Component<'layout.header'>;
+    footer: Attribute.Component<'layout.footer'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -834,6 +835,15 @@ export interface ApiPagePage extends Schema.CollectionType {
   attributes: {
     slug: Attribute.String;
     seo: Attribute.Component<'shared.seo'>;
+    blocks: Attribute.DynamicZone<
+      [
+        'blocks.hero',
+        'blocks.call-to-action',
+        'blocks.features',
+        'blocks.frequently-asked-questions',
+        'blocks.testimonials'
+      ]
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

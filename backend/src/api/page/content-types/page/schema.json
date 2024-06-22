@@ -19,6 +19,16 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.hero",
+        "blocks.call-to-action",
+        "blocks.features",
+        "blocks.frequently-asked-questions",
+        "blocks.testimonials"
+      ]
     }
   }
 }
